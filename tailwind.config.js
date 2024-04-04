@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -17,38 +17,38 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        border: "hsl(12, 6.5%, 15.1%)", // Dark blue
+        input: "hsl(12, 6.5%, 15.1%)", // Dark blue
+        ring: "hsl(24, 5.7%, 82.9%)", // Golden
+        background: "hsl(20, 14.3%, 4.1%)", // Dark blue
+        foreground: "hsl(60, 9.1%, 97.8%)", // Golden
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "hsl(60, 9.1%, 97.8%)", // Golden
+          foreground: "hsl(24, 9.8%, 10%)", // Dark blue
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "hsl(12, 6.5%, 15.1%)", // Dark blue
+          foreground: "hsl(60, 9.1%, 97.8%)", // Golden
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "hsl(0, 62.8%, 30.6%)", // Red
+          foreground: "hsl(60, 9.1%, 97.8%)", // Golden
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "hsl(12, 6.5%, 15.1%)", // Dark blue
+          foreground: "hsl(24, 5.4%, 63.9%)", // Dark blue (a bit lighter)
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "hsl(12, 6.5%, 15.1%)", // Dark blue
+          foreground: "hsl(60, 9.1%, 97.8%)", // Golden
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "hsl(20, 14.3%, 4.1%)", // Dark blue
+          foreground: "hsl(60, 9.1%, 97.8%)", // Golden
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "hsl(20, 14.3%, 4.1%)", // Dark blue
+          foreground: "hsl(60, 9.1%, 97.8%)", // Golden
         },
       },
       borderRadius: {
@@ -73,4 +73,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

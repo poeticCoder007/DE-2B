@@ -10,65 +10,140 @@ body,
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 20 14.3% 4.1%;
+    --background: 238,
+    238,
+    238;
+    --foreground: 28,
+    49,
+    71;
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
- 
-    --primary: 24 9.8% 10%;
-    --primary-foreground: 60 9.1% 97.8%;
- 
-    --secondary: 60 4.8% 95.9%;
-    --secondary-foreground: 24 9.8% 10%;
- 
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
- 
-    --accent: 60 4.8% 95.9%;
-    --accent-foreground: 24 9.8% 10%;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 9.1% 97.8%;
+    --card: 238,
+    238,
+    238;
+    --card-foreground: 28,
+    49,
+    71;
 
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 20 14.3% 4.1%;
- 
+    --popover: 238,
+    238,
+    238;
+    --popover-foreground: 28,
+    49,
+    71;
+
+    --primary: 0,
+    38,
+    77;
+    --primary-foreground: 255,
+    204,
+    0;
+
+    --secondary: 0,
+    38,
+    77;
+    --secondary-foreground: 28,
+    49,
+    71;
+
+    --muted: 0,
+    38,
+    77;
+    --muted-foreground: 141,
+    114,
+    0;
+
+    --accent: 0,
+    38,
+    77;
+    --accent-foreground: 28,
+    49,
+    71;
+
+    --destructive: 255,
+    51,
+    0;
+    --destructive-foreground: 255,
+    204,
+    0;
+
+    --border: 28,
+    49,
+    71;
+    --input: 28,
+    49,
+    71;
+    --ring: 238,
+    238,
+    238;
+
     --radius: 0.5rem;
   }
- 
   .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
- 
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
- 
-    --popover: 20 14.3% 4.1%;
-    --popover-foreground: 60 9.1% 97.8%;
- 
-    --primary: 60 9.1% 97.8%;
-    --primary-foreground: 24 9.8% 10%;
- 
-    --secondary: 12 6.5% 15.1%;
-    --secondary-foreground: 60 9.1% 97.8%;
- 
-    --muted: 12 6.5% 15.1%;
-    --muted-foreground: 24 5.4% 63.9%;
- 
-    --accent: 12 6.5% 15.1%;
-    --accent-foreground: 60 9.1% 97.8%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 60 9.1% 97.8%;
- 
-    --border: 12 6.5% 15.1%;
-    --input: 12 6.5% 15.1%;
-    --ring: 24 5.7% 82.9%;
+    --background: 28,
+    49,
+    71;
+    --foreground: 255,
+    204,
+    0;
+
+    --card: 28,
+    49,
+    71;
+    --card-foreground: 255,
+    204,
+    0;
+
+    --popover: 28,
+    49,
+    71;
+    --popover-foreground: 255,
+    204,
+    0;
+
+    --primary: 0,
+    38,
+    77;
+    --primary-foreground: 28,
+    49,
+    71;
+
+    --secondary: 0,
+    38,
+    77;
+    --secondary-foreground: 255,
+    204,
+    0;
+
+    --muted: 0,
+    38,
+    77;
+    --muted-foreground: 141,
+    114,
+    0;
+
+    --accent: 0,
+    38,
+    77;
+    --accent-foreground: 255,
+    204,
+    0;
+
+    --destructive: 255,
+    51,
+    0;
+    --destructive-foreground: 255,
+    204,
+    0;
+
+    --border: 0,
+    38,
+    77;
+    --input: 0,
+    38,
+    77;
+    --ring: 28,
+    49,
+    71;
   }
 }
  
@@ -79,4 +154,25 @@ body,
   body {
     @apply bg-background text-foreground;
   }
+}
+.flexbox-bg::after {
+  content: 'FlexBox';
+  position: absolute;
+  top: 50%;
+  font-family: sans-serif;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15rem;
+  /* color: #101725; */
+  color: #3943566f;
+  /* text-shadow: 0 0 15px rgb(25, 25, 27); */
+
+}
+
+.flexbox-bg {
+  position: relative;
+  /* background: #41295a !important; */
+  background: linear-gradient(to right, rgba(20, 30, 48, 0.1), rgba(36, 59, 85, 0.1));
+  /* background: linear-gradient(to top, #2f034583, #45048b86),
+    url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg') !important; */
 }
