@@ -128,7 +128,7 @@ export const ChatItem = ({
   const isImage = !isPDF && fileUrl;
 
   return (
-    <div className="relative group flex items-center hover:bg-black/5 p-4 transition w-full">
+    <div className="relative group flex items-center hover:bg-black/5 p-4 transition w-full sr-btn">
       <div className="group flex gap-x-2 items-start w-full">
         <div onClick={onMemberClick} className="cursor-pointer hover:drop-shadow-md transition">
           <UserAvatar src={member.profile.imageUrl} />
@@ -143,7 +143,7 @@ export const ChatItem = ({
                 {roleIconMap[member.role]}
               </ActionTooltip>
             </div>
-            <span className="text-xs text-zinc-500 dark:text-zinc-400">
+            <span className="text-xs text-violet-500 dark:text-violet-400">
               {timestamp}
             </span>
           </div>
@@ -177,12 +177,12 @@ export const ChatItem = ({
           )}
           {!fileUrl && !isEditing && (
             <p className={cn(
-              "text-sm text-zinc-600 dark:text-zinc-300",
-              deleted && "italic text-zinc-500 dark:text-zinc-400 text-xs mt-1"
+              "text-sm text-violet-600 dark:text-violet-300",
+              deleted && "italic text-violet-500 dark:text-violet-400 text-xs mt-1"
             )}>
               {content}
               {isUpdated && !deleted && (
-                <span className="text-[10px] mx-2 text-zinc-500 dark:text-zinc-400">
+                <span className="text-[10px] mx-2 text-violet-500 dark:text-violet-400">
                   (edited)
                 </span>
               )}
@@ -202,7 +202,7 @@ export const ChatItem = ({
                           <div className="relative w-full">
                             <Input
                               disabled={isLoading}
-                              className="p-2 bg-zinc-200/90 dark:bg-zinc-700/75 border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 text-zinc-600 dark:text-zinc-200"
+                              className="p-2 bg-violet-200/90 dark:bg-violet-700/75 border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 text-violet-600 dark:text-violet-200"
                               placeholder="Edited message"
                               {...field}
                             />
@@ -215,7 +215,7 @@ export const ChatItem = ({
                     Save
                   </Button>
               </form>
-              <span className="text-[10px] mt-1 text-zinc-400">
+              <span className="text-[10px] mt-1 text-violet-400">
                 Press escape to cancel, enter to save
               </span>
             </Form>
@@ -223,12 +223,12 @@ export const ChatItem = ({
         </div>
       </div>
       {canDeleteMessage && (
-        <div className="hidden group-hover:flex items-center gap-x-2 absolute p-1 -top-2 right-5 bg-white dark:bg-zinc-800 border rounded-sm">
+        <div className="hidden group-hover:flex items-center gap-x-2 absolute p-1 -top-2 right-5 bg-white dark:bg-violet-800 border rounded-sm">
           {canEditMessage && (
             <ActionTooltip label="Edit">
               <Edit
                 onClick={() => setIsEditing(true)}
-                className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition"
+                className="cursor-pointer ml-auto w-4 h-4 text-violet-500 hover:text-violet-600 dark:hover:text-violet-300 transition"
               />
             </ActionTooltip>
           )}
@@ -238,7 +238,7 @@ export const ChatItem = ({
                 apiUrl: `${socketUrl}/${id}`,
                 query: socketQuery,
                })}
-              className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition"
+              className="cursor-pointer ml-auto w-4 h-4 text-violet-500 hover:text-violet-600 dark:hover:text-violet-300 transition"
             />
           </ActionTooltip>
         </div>

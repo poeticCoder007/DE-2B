@@ -164,15 +164,21 @@ body,
   transform: translate(-50%, -50%);
   font-size: 15rem;
   /* color: #101725; */
-  color: #3943566f;
+  /* color: #3943566f; */
+  color:hsla(39, 100%, 50%, 0.43);
   /* text-shadow: 0 0 15px rgb(25, 25, 27); */
+
+}
+
+.flexbox-bgg {
+  background: linear-gradient(to right, rgba(29, 20, 48, 0.5), rgba(7, 36, 69, 0.5));
 
 }
 
 .flexbox-bg {
   position: relative;
   /* background: #41295a !important; */
-  background: linear-gradient(to right, rgba(20, 30, 48, 0.1), rgba(36, 59, 85, 0.1));
+  background: linear-gradient(to right, rgba(29, 20, 48, 0.5), rgba(7, 36, 69, 0.5));
   /* background: linear-gradient(to top, #2f034583, #45048b86),
     url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg') !important; */
 }

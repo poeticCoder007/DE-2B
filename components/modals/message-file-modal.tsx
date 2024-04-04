@@ -79,7 +79,7 @@ export const MessageFileModal = () => {
           <DialogTitle className="text-2xl text-center font-bold">
             Add an attachment
           </DialogTitle>
-          <DialogDescription className="text-center text-zinc-500">
+          <DialogDescription className="text-center text-violet-500">
             Send a file as a message
           </DialogDescription>
         </DialogHeader>

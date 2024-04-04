@@ -17,38 +17,38 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(12, 6.5%, 15.1%)", // Dark blue
-        input: "hsl(12, 6.5%, 15.1%)", // Dark blue
+        border: "hsl(265, 39%, 33%)", // Dark blue
+        input: "hsl(265, 39%, 33%)", // Dark blue
         ring: "hsl(24, 5.7%, 82.9%)", // Golden
-        background: "hsl(20, 14.3%, 4.1%)", // Dark blue
-        foreground: "hsl(60, 9.1%, 97.8%)", // Golden
+        background: "hsl(265, 39%, 13%)", // Dark blue
+        foreground: "hsl(39, 100%, 50%)", // Golden
         primary: {
-          DEFAULT: "hsl(60, 9.1%, 97.8%)", // Golden
-          foreground: "hsl(24, 9.8%, 10%)", // Dark blue
+          DEFAULT: "hsl(39, 100%, 50%)", // Golden
+          foreground: "hsl(265, 39%, 13%)", // Dark blue
         },
         secondary: {
-          DEFAULT: "hsl(12, 6.5%, 15.1%)", // Dark blue
-          foreground: "hsl(60, 9.1%, 97.8%)", // Golden
+          DEFAULT: "hsl(265, 39%, 13%)", // Dark blue
+          foreground: "hsl(39, 100%, 50%)", // Golden
         },
         destructive: {
-          DEFAULT: "hsl(0, 62.8%, 30.6%)", // Red
-          foreground: "hsl(60, 9.1%, 97.8%)", // Golden
+          DEFAULT: "hsl(265, 39%, 13%)", // Dark blue
+          foreground: "hsl(39, 100%, 50%)", // Golden
         },
         muted: {
-          DEFAULT: "hsl(12, 6.5%, 15.1%)", // Dark blue
-          foreground: "hsl(24, 5.4%, 63.9%)", // Dark blue (a bit lighter)
+          DEFAULT: "hsl(265, 39%, 13%)", // Dark blue
+          foreground: "hsl(39, 100%, 50%)", // Golden
         },
         accent: {
-          DEFAULT: "hsl(12, 6.5%, 15.1%)", // Dark blue
-          foreground: "hsl(60, 9.1%, 97.8%)", // Golden
+          DEFAULT: "hsl(265, 39%, 13%)", // Dark blue
+          foreground: "hsl(39, 100%, 50%)", // Golden
         },
         popover: {
-          DEFAULT: "hsl(20, 14.3%, 4.1%)", // Dark blue
-          foreground: "hsl(60, 9.1%, 97.8%)", // Golden
+          DEFAULT: "hsl(265, 39%, 13%)", // Dark blue
+          foreground: "hsl(39, 100%, 50%)", // Golden
         },
         card: {
-          DEFAULT: "hsl(20, 14.3%, 4.1%)", // Dark blue
-          foreground: "hsl(60, 9.1%, 97.8%)", // Golden
+          DEFAULT: "hsl(265, 39%, 13%)", // Dark blue
+          foreground: "hsl(39, 100%, 50%)", // Golden
         },
       },
       borderRadius: {
