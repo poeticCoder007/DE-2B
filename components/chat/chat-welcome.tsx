@@ -17,7 +17,7 @@ export const ChatWelcome = ({
         </div>
       )}
       <p className="text-xl md:text-3xl font-bold">
-        {type === "channel" ? "FlexBox #" : ""}{name}
+        {type === "channel" ? "#" : ""}{name}
       </p>
       <p className="text-violet-600 dark:text-violet-400 text-sm">
         {type === "channel"

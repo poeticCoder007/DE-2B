@@ -17,6 +17,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        'theme-purple':"#6d28d9",
         border: "hsl(265, 39%, 33%)", // Dark blue
         input: "hsl(265, 39%, 33%)", // Dark blue
         ring: "hsl(24, 5.7%, 82.9%)", // Golden
@@ -50,6 +51,7 @@ module.exports = {
           DEFAULT: "hsl(265, 39%, 13%)", // Dark blue
           foreground: "hsl(39, 100%, 50%)", // Golden
         },
+
       },
       borderRadius: {
         lg: "var(--radius)",

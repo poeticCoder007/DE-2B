@@ -156,13 +156,13 @@ body,
   }
 }
 .flexbox-bg::after {
-  content: 'FlexBox';
+  /* content: 'FlexBox'; */
   position: absolute;
   top: 50%;
   font-family: sans-serif;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 15rem;
+  font-size: 15.5rem;
   /* color: #101725; */
   /* color: #3943566f; */
   color:hsla(39, 100%, 50%, 0.43);
